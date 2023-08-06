@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="Question"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/answersLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/questionTextView"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+
+        <!-- Buttons for answer options -->
+        <Button
+            android:id="@+id/answerButton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey"
+            android:layout_marginTop="8dp"
+            android:text="Answer 1" />
+
+        <Button
+            android:id="@+id/answerButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey"
+            android:layout_marginTop="8dp"
+            android:text="Answer 2" />
+
+        <Button
+            android:id="@+id/answerButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey"
+            android:layout_marginTop="8dp"
+            android:text="Answer 3" />
+
+        <Button
+            android:id="@+id/answerButton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey"
+            android:layout_marginTop="8dp"
+            android:text="Answer 4" />
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/backToMenuButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/answersLayout"
+        android:background="@color/darkred"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="Zurück zum Hauptmenu" />
+
+    <Button
+        android:id="@+id/nextQuestionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/answersLayout"
+        android:background="@color/limegreen"
+        android:text="Nächste Frage"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/usernametext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp" />
+
+    <TextView
+        android:id="@+id/scoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110dp"
+        android:padding="16dp"
+        android:layout_marginTop="100dp"
+        android:text="SCORE: 0"
+        android:layout_below="@id/answersLayout"
+        android:textColor="@android:color/black"
+        android:textSize="31sp" />
+
+
+</RelativeLayout>
